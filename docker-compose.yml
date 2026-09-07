@@ -1,0 +1,17 @@
+#.dockerignore
+/dist
+/tmp
+
+# Node modules
+/node_modules
+
+# Go build artifacts
+*.exe
+*.test
+
+# Dependency directories
+/Godeps/
+/vendor/
+
+# Ignore.dockerignore
+.dockerignore

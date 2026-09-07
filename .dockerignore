@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Health check script for microservices
+
+# Check if the microservice is running
+if curl --output /dev/null --silent --head --fail http://localhost:50051; then
+  echo "Microservice is healthy"
+  exit 0
+else
+  echo "Microservice is not healthy"
+  exit 1
+fi
